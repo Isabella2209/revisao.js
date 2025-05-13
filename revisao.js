@@ -39,22 +39,3 @@ if (notaFilme <= 4.0) {
 else if (notaFilme > 7.0) {
   console.log("O filme é muito bom!");
 }
-
-console.log("\n"); 
-function verificaChuva(previsaoTempo) {
-  previsaoTempo.forEach(dia => {
-    console.log(dia.chanceDeChuva > 50 ? `${dia.dia}: Levar guarda-chuva` : `${dia.dia}: Tempo agradável`);
-  });
-}
-
-let previsaoTempo = [
-  { dia: "Segunda-feira", chanceDeChuva: 40 },
-  { dia: "Terça-feira", chanceDeChuva: 60 },
-  { dia: "Quarta-feira", chanceDeChuva: 30 },
-  { dia: "Quinta-feira", chanceDeChuva: 70 },
-  { dia: "Sexta-feira", chanceDeChuva: 20 },
-  { dia: "Sábado", chanceDeChuva: 90 },
-  { dia: "Domingo", chanceDeChuva: 50 }
-];
-
-verificaChuva(previsaoTempo);
