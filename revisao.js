@@ -40,8 +40,7 @@ else if (notaFilme > 7.0) {
   console.log("O filme é muito bom!");
 }
 
-console.log("\n"); // Pula uma linha no início
-
+console.log("\n"); 
 function verificaChuva(previsaoTempo) {
   previsaoTempo.forEach(dia => {
     console.log(dia.chanceDeChuva > 50 ? `${dia.dia}: Levar guarda-chuva` : `${dia.dia}: Tempo agradável`);
